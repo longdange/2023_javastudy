@@ -106,7 +106,7 @@ public class Ex05_Join extends JFrame{
 		// setLocationRelativeTo(null);
 		Dimension ds = Toolkit.getDefaultToolkit().getScreenSize();
 		setBounds(ds.width/2-200, ds.height/2-200, 400,400);
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setDefaultCloseOperation(ex);
 		setVisible(true);
 		
 	}

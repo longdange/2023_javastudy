@@ -15,13 +15,13 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.ScrollPaneConstants;
 
-public class Ex05_JRado_ITemListener extends JFrame implements ActionListener,ItemListener{
+public class Ex05_JRadIo_ITemListener extends JFrame implements ActionListener,ItemListener{
 	JPanel jp1,jp2;
 	JRadioButton jrb1,jrb2,jrb3,jrb4;
 	JTextArea jta;
 	JButton exit,clear;
 	ButtonGroup bg;
-public Ex05_JRado_ITemListener() {
+public Ex05_JRadIo_ITemListener() {
 	super("라디오 버튼 이벤트");
 	jp1=new JPanel();
 	jrb1=new JRadioButton("+");
@@ -84,6 +84,6 @@ public void actionPerformed(ActionEvent e) {
 	}
 }
 public static void main(String[] args) {
-	new Ex05_JRado_ITemListener();
+	new Ex05_JRadIo_ITemListener();
 }
 }
