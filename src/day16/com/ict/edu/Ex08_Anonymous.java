@@ -35,7 +35,7 @@ class AbcTest3{
 			}
 		}.printData();
 	}
-	public void prn2();
+	
 	
 }
 public class Ex08_Anonymoun{

@@ -1,5 +1,26 @@
 package day21.com.ict.edu;
 
-public class Ex02_LogIn_ok {
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class Ex02_LogIn_ok extends JPanel{
+	Ex02_Main main;
+	JButton jb;
+	//main에 있는 cardLayout,pg1를 이용하기 위해서 정보를 받아야 한다.
+	//새로 만들면 정보교류를 할 수 없다.
+	//단,전달 정보가 많으면 클래스 자체를 받자.
+public Ex02_LogIn_ok(Ex02_Main ex02_Main) {
+	//생성자에서 받은 인자는 무조건 전역변수로 만들자
+	this.main=main;
+	
+	jb=new JButton("뒤로 가기");
+	
+	add(new JLabel("로그인 성공 창입니다."));
+	
+	add(jb);
+	
+}
+
 
 }

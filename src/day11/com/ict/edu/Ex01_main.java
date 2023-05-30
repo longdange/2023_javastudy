@@ -2,7 +2,7 @@ package day11.com.ict.edu;
 
 public class Ex01_main {
 	public static void main(String[] args) {
-		//static 객체 생서과 상관없이 호출 가능
+		//static 객체 생성과 상관없이 호출 가능
 		//static 호출법:클래스.변수,클래스이름.메서드
 System.out.println(Ex01_method.ki);//178.5
 Ex01_method.getAvg();

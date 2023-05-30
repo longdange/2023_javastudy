@@ -80,7 +80,7 @@ public class Ex01_CardLayout extends JFrame{
 	//pack();
 	setLocationRelativeTo(null);
 	setSize(300,300);
-	setDefaultCloseOperation(exit_on_close);
+	setDefaultCloseOperation(EXIT_ON_CLOSE);
 	setVisible(true);
 	
 	jb1.addActionListener(new ActionListener() {

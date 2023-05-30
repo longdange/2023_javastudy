@@ -11,7 +11,7 @@ public class Ex01_Constructor {
 		//생성자가 다른 생성자 호출 (반드시 첫번째 줄에서)
 		this("임꺽정");//첫 번째 위치에 있어야 한다. 
 		System.out.println("기본생성자:"+this);	
-//	//생성자에서 매서드 호출
+//생성자에서 매서드 호출
 //	prn();
 //	this.prn();
 	}   

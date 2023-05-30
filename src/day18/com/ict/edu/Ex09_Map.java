@@ -15,7 +15,7 @@ public class Ex09_Map {
 		//  관련 클래스 : HashMap
 public static void main(String[] args) {
 		
-		// 생성 (key가 숫지, value는 문자열인 경우, )
+		// 생성 (key가 숫자, value는 문자열인 경우, )
 		HashMap<Integer, String> map1 = new HashMap<>();
 		map1.put(0, "한국");
 		map1.put(1, "미국");
