@@ -114,7 +114,8 @@ public class Ex06_Menu extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				FileDialog fd = new FileDialog((JFrame) getParent(), "불러오기", FileDialog.LOAD);
+				FileDialog fd = new FileDialog((JFrame) getParent(), "저장하기", FileDialog.SAVE);
+				fd.setVisible(true);
 			}
 
 		});
