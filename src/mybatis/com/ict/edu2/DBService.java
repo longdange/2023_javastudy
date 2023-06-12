@@ -1,4 +1,4 @@
-package mybatis.com.ict.edu;
+package mybatis.com.ict.edu2;
 
 import java.io.InputStream;
 

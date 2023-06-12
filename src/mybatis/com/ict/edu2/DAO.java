@@ -1,4 +1,4 @@
-package mybatis.com.ict.edu;
+package mybatis.com.ict.edu2;
 
 import java.util.List;
 
@@ -51,6 +51,10 @@ public class DAO {
 	public static int getUpdate(VO vo) {
 		int result=getSession().update("custUpdate", vo);
 		ss.commit();
+		return result;
+	}
+	public static int getIdchek(VO vo) {
+		int result=getSession().idc
 		return result;
 	}
 }
