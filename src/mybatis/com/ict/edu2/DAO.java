@@ -53,8 +53,5 @@ public class DAO {
 		ss.commit();
 		return result;
 	}
-	public static int getIdchek(VO vo) {
-		int result=getSession().idc
-		return result;
-	}
+	
 }

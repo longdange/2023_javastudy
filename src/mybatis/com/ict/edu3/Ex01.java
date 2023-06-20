@@ -219,7 +219,7 @@ public class Ex01 extends JFrame {
 						} else {
 							VO vo =new VO();
 							vo.setCustid(custid);
-							VO vo2 = DAO.getSelectOne(vo);
+							VO vo2 = DAO.getSelect(vo);
 							jta.setText("");
 							jtf2.setText(vo2.getName());
 							jtf3.setText(vo2.getAddress());

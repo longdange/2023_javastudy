@@ -18,7 +18,7 @@ public static void main(String[] args) {
 	Ex04_VO vo4=new Ex04_VO("박길동", 33, "서울 서초구", false, 165.5);
 	Ex04_VO vo5=new Ex04_VO("홍길동", 26, "서울 중랑구", true, 173.5);
 	//2.만들어진 객체를 컬렉션으로 모으자
-	ArrayList<Ex04_VO>list= new ArrayList<>();
+	ArrayList<Ex04_VO> list= new ArrayList<>();
 	list.add(vo1);
 	list.add(vo2);
 	list.add(vo3);
@@ -30,6 +30,7 @@ public static void main(String[] args) {
 	//읽을 때 역직렬화를 해야 볼 수 있다.
 	String pathname="D:/KJH/object02.ser";
 	File file =new File(pathname);
+	
 	FileOutputStream fos =null;
 	BufferedOutputStream bos=null;
 	ObjectOutputStream oos=null;

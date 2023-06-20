@@ -22,7 +22,8 @@ public class Ex04_ObjectInputStream {
 		ois=new ObjectInputStream(bis);
 		
 		//역직렬화
-		  ArrayList<Ex04_VO> list =(ArrayList<Ex04_VO>) ois.readObject();
+		  ArrayList<Ex04_VO> list = (ArrayList<Ex04_VO>) ois.readObject();
+		  
 		  for (Ex04_VO k : list) {
 			System.out.print(k.getName()+"\t");
 			System.out.print(k.getAge()+"\t");

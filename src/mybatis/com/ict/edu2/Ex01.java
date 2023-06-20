@@ -18,14 +18,14 @@ import javax.swing.JTextField;
 import javax.swing.ScrollPaneConstants;
 
 
-public class Ex02_Main extends JFrame {
+public class Ex01 extends JFrame {
 	JPanel jp1, jp2, jp3, jp4, jp5, jp6;
 	JTextField jtf1, jtf2, jtf3, jtf4;
 	JButton jb1, jb2, jb3, jb4;
 	JTextArea jta;
 	JScrollPane jsp;
 
-	public Ex02_Main() {
+	public Ex01() {
 		super("DB 연동 정보");
 		jp1 = new JPanel(new GridLayout(0, 2));
 		jp2 = new JPanel(new GridLayout(0, 2));
@@ -90,7 +90,7 @@ public class Ex02_Main extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				jta.setText("");
-				ArrayList<VO> list = DAO.getSelectAll();
+				ArrayList<VO> list = (ArrayList<VO>) DAO.getList();
 				jta.append("\n\t\t 회원 전체 정보 \n\n");
 				jta.append("\t번호\t이름\t주소\t전화번호\n");
 				for (VO k : list) {
@@ -115,7 +115,7 @@ public class Ex02_Main extends JFrame {
 				// and 조건
 				if (custid.length() > 0) {
 					// custid 중복이면 삽입 불가
-					boolean idchk = VO.getIdchk(custid);
+					boolean idchk = DAO.getIdchk();
 					// false중복
 					if (idchk) {
 						jta.setText("");
@@ -124,7 +124,7 @@ public class Ex02_Main extends JFrame {
 						vo.setName(name);
 						vo.setAddress(address);
 						vo.setPhone(phone);
-						int res = VO.getInsert(vo);
+						int res = DAO.getInsert(vo);
 						if (res > 0) {
 							JOptionPane.showMessageDialog(getParent(), "삽입 성공");
 						} else {
@@ -208,7 +208,7 @@ public class Ex02_Main extends JFrame {
 						} else {
 							VO vo =new VO();
 							vo.setCustid(custid);
-							VO vo2 = DAO.getSelectOne(vo);
+							VO vo2 = DAO.getOne(vo);
 							jta.setText("");
 							jtf2.setText(vo2.getName());
 							jtf3.setText(vo2.getAddress());
@@ -232,7 +232,7 @@ public class Ex02_Main extends JFrame {
 					if (result > 0) {
 						jta.setText("");
 						JOptionPane.showMessageDialog(getParent(), "수정 성공");
-						ArrayList<VO> list = DAO.getSelectAll();
+						ArrayList<VO> list = (ArrayList<VO>) DAO.getList();
 						jta.append("\n\t\t 회원 전체 정보 \n\n");
 						jta.append("\t번호\t이름\t주소\t전화번호\n");
 						for (VO k : list) {
@@ -257,7 +257,7 @@ public class Ex02_Main extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		new Ex02_Main();
+		new Ex01();
 	}
 }
 
